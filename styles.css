@@ -1,21 +1,27 @@
-body {
-    font-family: Arial, sans-serif;
+/* 基本样式设置 */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+/* 页头样式 */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: linear-gradient(90deg, #00b0ff, #0081cb);
+    padding: 15px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
     padding: 0;
 }
 
@@ -27,44 +33,130 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 主视觉区 */
 .hero {
     text-align: center;
-    background-color: #f4f4f4;
-    padding: 50px 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 60px 20px;
+    color: #fff;
 }
 
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #ff7e5f;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+/* 特色部分 */
 .features {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    margin: 50px 0;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .feature {
-    text-align: center;
     width: 30%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
+.feature h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #777;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+/* 用户评价部分 */
 .testimonials {
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-color: #fff;
+    padding: 40px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .testimonials blockquote {
-    border-left: 5px solid #ccc;
+    margin: 20px 0;
+    font-style: italic;
+    border-left: 5px solid #ff7e5f;
     padding-left: 15px;
-    margin: 10px 0;
+    color: #555;
 }
 
+.testimonials footer {
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+}
+
+/* 快速上手部分 */
 .tutorial-link {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
+.tutorial-link a {
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tutorial-link a:hover {
+    background-color: #feb47b;
+}
+
+/* 页脚样式 */
 footer {
     text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
+    font-size: 14px;
 }
